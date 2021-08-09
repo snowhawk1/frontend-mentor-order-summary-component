@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+body{
+    background: #FFF;
+}
+.wrapper{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(images/pattern-background-mobile.svg) no-repeat center/100% 500%;
+}
+.card-wrapper{
+    text-align: center;
+    background: #FFF;
+    border-radius: 15px;
+    width: 90%;
+    box-shadow: 0 10px 40px hsl(224, 100%, 84%);
+}
+.text-wrapper{
+    padding: 10px;
+}
+
+img{
+    width: 100%;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+h2, p, span, .plan{
+    font-family: 'Red Hat Display', sans-serif;
+}
+.main{
+    font-size: 16px;
+    padding: 0 27px;
+}
+
+.price, .main{
+    color: hsl(224, 23%, 55%)
+}
+
+.plan{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(225, 100%, 98%);
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin: 0 15px;
+}
+
+#music{
+    width: 50px;
+    height: 50px;
+}
+
+a{
+    align-self: center;
+}
+
+.pay{
+    padding: 15px 20%;
+    border-radius: 10px;
+    background-color: hsl(245, 75%, 52%);
+    color: #FFF;
+    font-size: 16px;
+    box-shadow: 0 10px 40px hsl(225, 100%, 94%);
+    border: 0;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media(min-width: 768px){
+    .card-wrapper{
+        width: 70%;
+        height: 65%;
+    }
+}
+
+@media(min-width: 1024px){
+    .wrapper{
+        background: url(images/pattern-background-desktop.svg) no-repeat center/100% 500%;
+    }
+    .card-wrapper{
+        width: 35%;
+        height: 70%;
+    }
+}
